@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Safwan&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Projects%20and%20Tech%20Stack&descAlignY=58&descSize=22" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=120&section=header&text=Safwan%20Shaikh&fontSize=56&fontColor=ffffff&fontAlign=50&fontAlignY=50" alt="Safwan Shaikh" />
 
 </div>
 
@@ -72,12 +72,3 @@
 | [Kyphosis-Detection](https://github.com/Safwanny/Kyphosis-Detection) | Detecting kyphosis with decision trees and a random forest classifier. | Decision trees, random forest, Jupyter |
 | [Spam-Messages-Detection](https://github.com/Safwanny/Spam-Messages-Detection) | Detecting spam messages. | NLP, Jupyter |
 | [Yelp-Review-Classification](https://github.com/Safwanny/Yelp-Review-Classification) | Classifying Yelp reviews as 1 or 5 stars. | NLP, Jupyter |
-
-## 🏭 Industry work
-
-- **Robert Bosch, Renningen:** bachelor thesis on agentic AI for troubleshooting LLM testbenches
-- **Robert Bosch:** earlier internship on radar ECU testbenches
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=100&section=footer" alt="Footer" />
-</div>
