@@ -41,7 +41,7 @@
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [mecanum_wheel_bot](https://github.com/Safwanny/mecanum_wheel_bot) | Modular simulation and control package for a four-wheel mecanum platform. 44 movable joints (4 wheels plus 40 passive rollers), 360° LiDAR, IMU, front RGB camera, EKF-based localization, holonomic teleop. Part of a team-built mecanum robot where I design the mechanical and electronics parts; navigation with LiDAR and Nav2 works in mapped environments, and real hardware is coming step by step. | ROS 2 Jazzy, Gazebo Harmonic, ros2_control, robot_localization, URDF/Xacro, RViz |
-| [6DOF_arm](https://github.com/Safwanny/6DOF_arm) | 6-DOF manipulator arm built from scratch and integrated with MoveIt 2. C++ API for named, joint and pose goals plus Cartesian paths, gripper control, and a custom `PoseCommand` interface. | ROS 2, MoveIt 2, C++, ros2_control, URDF/Xacro, RViz2 |
+| [6DOF_arm](https://github.com/Safwanny/6DOF_arm) | 6-DOF manipulator arm built from scratch and integrated with MoveIt 2. C++ API for named, joint and pose goals plus Cartesian paths, gripper control, and a custom `PoseCommand` interface. Includes MoveIt Task Constructor pick-and-place that packs randomly placed cubes into a tray, and a Gazebo Harmonic simulation with physics, force-controlled friction grasping and a depth camera. | ROS 2 Jazzy, MoveIt 2, MoveIt Task Constructor, C++, Gazebo Harmonic, ros2_control, URDF/Xacro, RViz2 |
 | [bumperbot](https://github.com/Safwanny/bumperbot) | Differential-drive mobile robot simulation with wheel velocity control and odometry feedback in RViz. Localization, mapping, planning and navigation are planned next. | ROS 2 Jazzy, Gazebo, ros2_control, RViz |
 | [my_robot](https://github.com/Safwanny/my_robot) | ROS 2 packages to simulate and visualize a custom mobile robot with a camera, including a ROS–Gazebo bridge and keyboard teleop. | ROS 2, Gazebo, ros_gz_bridge, URDF/Xacro, RViz2 |
 
@@ -65,10 +65,4 @@
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [Battery-RUL-Prediction](https://github.com/Safwanny/Battery-RUL-Prediction) | Predicting the remaining useful life of batteries with ML. | Python |
-| [MNIST-Digit-Classification](https://github.com/Safwanny/MNIST-Digit-Classification) | Neural network for recognizing handwritten digits. | Deep learning, Jupyter |
-| [Calories-Burnt-Prediction](https://github.com/Safwanny/Calories-Burnt-Prediction) | Regression model predicting calories burnt during exercise. | XGBoost, Jupyter |
-| [Vehicle-Price-Prediction](https://github.com/Safwanny/Vehicle-Price-Prediction) | Linear regression model for predicting vehicle prices. | Linear regression, Jupyter |
-| [Iris-Flower-Classification](https://github.com/Safwanny/Iris-Flower-Classification) | Classifying two types of Iris flowers. | SVM, Jupyter |
-| [Kyphosis-Detection](https://github.com/Safwanny/Kyphosis-Detection) | Detecting kyphosis with decision trees and a random forest classifier. | Decision trees, random forest, Jupyter |
-| [Spam-Messages-Detection](https://github.com/Safwanny/Spam-Messages-Detection) | Detecting spam messages. | NLP, Jupyter |
-| [Yelp-Review-Classification](https://github.com/Safwanny/Yelp-Review-Classification) | Classifying Yelp reviews as 1 or 5 stars. | NLP, Jupyter |
+| [machinelearning](https://github.com/Safwanny/machinelearning) | Collection of basic ML projects as Jupyter notebooks: MNIST digit classification (neural network), calories burnt (XGBoost), vehicle price (linear regression), Iris (SVM), kyphosis (decision trees, random forest), spam detection (NLP), Yelp review classification (NLP). | Python, Jupyter, XGBoost, SVM, NLP |
