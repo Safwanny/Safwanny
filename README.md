@@ -18,6 +18,7 @@
 
 ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-FF6F00?style=for-the-badge)
+![PX4](https://img.shields.io/badge/PX4%20SITL-1B3A6B?style=for-the-badge)
 ![MoveIt 2](https://img.shields.io/badge/MoveIt%202-1E88E5?style=for-the-badge)
 ![Nav2](https://img.shields.io/badge/Nav2-5C2D91?style=for-the-badge)
 ![ros2_control](https://img.shields.io/badge/ros2__control-37474F?style=for-the-badge)
@@ -29,6 +30,7 @@
 
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge)
 ![XGBoost](https://img.shields.io/badge/XGBoost-EB6C1F?style=for-the-badge)
+![Eigen](https://img.shields.io/badge/Eigen-6E6E6E?style=for-the-badge)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
 ![Pygame](https://img.shields.io/badge/Pygame-2E7D32?style=for-the-badge)
@@ -42,6 +44,7 @@
 | --- | --- | --- |
 | [mecanum_wheel_bot](https://github.com/Safwanny/mecanum_wheel_bot) | Modular simulation and control package for a four-wheel mecanum platform. 44 movable joints (4 wheels plus 40 passive rollers), 360° LiDAR, IMU, front RGB camera, EKF-based localization, holonomic teleop. Part of a team-built mecanum robot where I design the mechanical and electronics parts; navigation with LiDAR and Nav2 works in mapped environments, and real hardware is coming step by step. | ROS 2 Jazzy, Gazebo Harmonic, ros2_control, robot_localization, URDF/Xacro, RViz |
 | [6DOF_arm](https://github.com/Safwanny/6DOF_arm) | 6-DOF manipulator arm built from scratch and integrated with MoveIt 2. C++ API for named, joint and pose goals plus Cartesian paths, gripper control, and a custom `PoseCommand` interface. Includes MoveIt Task Constructor pick-and-place that packs randomly placed cubes into a tray, and a Gazebo Harmonic simulation with physics, force-controlled friction grasping and a depth camera. | ROS 2 Jazzy, MoveIt 2, MoveIt Task Constructor, C++, Gazebo Harmonic, ros2_control, URDF/Xacro, RViz2 |
+| [my_drone](https://github.com/Safwanny/my_drone) | Quadcopter simulation of a custom 7-inch true-X build (404 mm, 0.931 kg all-up, 2807SL motors, 7040 tri-blade props, 6S) designed from CAD. Flies two ways on two branches: on my own cascaded flight controller and EKF in C++, and on PX4 v1.17 SITL (EKF2). Both take the same commands (keyboard teleop, go-to-goal waypoints) and publish the same state, so the two can be compared flight for flight. Sensors (IMU, barometer, magnetometer, GNSS) are modelled with x500-class noise. | ROS 2 Jazzy, Gazebo Harmonic, PX4 SITL, C++, ros2_control, URDF/Xacro, RViz2 |
 | [bumperbot](https://github.com/Safwanny/bumperbot) | Differential-drive mobile robot simulation with wheel velocity control and odometry feedback in RViz. Localization, mapping, planning and navigation are planned next. | ROS 2 Jazzy, Gazebo, ros2_control, RViz |
 | [my_robot](https://github.com/Safwanny/my_robot) | ROS 2 packages to simulate and visualize a custom mobile robot with a camera, including a ROS–Gazebo bridge and keyboard teleop. | ROS 2, Gazebo, ros_gz_bridge, URDF/Xacro, RViz2 |
 
