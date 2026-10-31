@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Robotics · Autonomy · Edge AI" width="100%" />
+<img src="assets/header.svg" alt="Robotics · Autonomy · Edge AI" width="80%" />
 
 <br />
 
@@ -63,13 +63,3 @@ I simulate first, then bring the design onto hardware.
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-## 📊 GitHub stats
-
-<div align="center">
-
-<img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Safwanny&show_icons=true&theme=tokyonight&hide_border=true" />
-<img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Safwanny&layout=compact&theme=tokyonight&hide_border=true" />
-
-<img width="100%" alt="Streak" src="https://streak-stats.demolab.com/?user=Safwanny&theme=tokyonight&hide_border=true" />
-
-</div>
