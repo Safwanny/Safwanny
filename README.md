@@ -1,7 +1,29 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=120&section=header&text=Safwan%20Shaikh&fontSize=56&fontColor=ffffff&fontAlign=50&fontAlignY=50" alt="Safwan Shaikh" />
+<img src="assets/header.svg" alt="Robotics · Autonomy · Edge AI" width="100%" />
 
+<br />
+
+**Mechatronics student building robots that sense, decide and move.**
+I simulate first, then bring the design onto hardware.
+
+<a href="https://www.linkedin.com/in/safwan-shaikh-a5493b246"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+
+</div>
+
+---
+
+## 🧭 Focus
+
+- **Mobile robots and manipulators** in ROS 2, from mecanum and differential drive to multi-joint arms
+- **Simulation-first development** with Gazebo, PX4 SITL and physics-based grasping
+- **Perception and estimation**: object detection, sensor fusion with EKF, signal filtering
+- **Edge AI** and learning-based control
+
+## 🔁 How a robot runs
+
+<div align="center">
+<img src="assets/stack.svg" alt="Robot software pipeline diagram" width="100%" />
 </div>
 
 ## 🛠️ Tech stack
@@ -10,62 +32,44 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![CMake](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 **Robotics and simulation**
 
-![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=for-the-badge&logo=ros&logoColor=white)
-![Gazebo](https://img.shields.io/badge/Gazebo-FF6F00?style=for-the-badge)
+![ROS 2](https://img.shields.io/badge/ROS%202%20Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)
+![Gazebo](https://img.shields.io/badge/Gazebo%20Harmonic-FF6F00?style=for-the-badge)
 ![PX4](https://img.shields.io/badge/PX4%20SITL-1B3A6B?style=for-the-badge)
-![MoveIt 2](https://img.shields.io/badge/MoveIt%202-1E88E5?style=for-the-badge)
+![MoveIt](https://img.shields.io/badge/MoveIt%202-1E88E5?style=for-the-badge)
 ![Nav2](https://img.shields.io/badge/Nav2-5C2D91?style=for-the-badge)
 ![ros2_control](https://img.shields.io/badge/ros2__control-37474F?style=for-the-badge)
 ![RViz2](https://img.shields.io/badge/RViz2-546E7A?style=for-the-badge)
-![URDF/Xacro](https://img.shields.io/badge/URDF%20%2F%20Xacro-6D4C41?style=for-the-badge)
-![robot_localization](https://img.shields.io/badge/robot__localization%20(EKF)-00796B?style=for-the-badge)
+![URDF](https://img.shields.io/badge/URDF%20%2F%20Xacro-6D4C41?style=for-the-badge)
 
-**Machine learning, vision and data**
+**Estimation, vision and learning**
 
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge)
 ![XGBoost](https://img.shields.io/badge/XGBoost-EB6C1F?style=for-the-badge)
-![Eigen](https://img.shields.io/badge/Eigen-6E6E6E?style=for-the-badge)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Eigen](https://img.shields.io/badge/Eigen-6E6E6E?style=for-the-badge)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
 ![Pygame](https://img.shields.io/badge/Pygame-2E7D32?style=for-the-badge)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 
----
+**Platform and workflow**
 
-## 🤖 Robotics
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [mecanum_wheel_bot](https://github.com/Safwanny/mecanum_wheel_bot) | Modular simulation and control package for a four-wheel mecanum platform. 44 movable joints (4 wheels plus 40 passive rollers), 360° LiDAR, IMU, front RGB camera, EKF-based localization, holonomic teleop. Part of a team-built mecanum robot where I design the mechanical and electronics parts; navigation with LiDAR and Nav2 works in mapped environments, and real hardware is coming step by step. | ROS 2 Jazzy, Gazebo Harmonic, ros2_control, robot_localization, URDF/Xacro, RViz |
-| [6DOF_arm](https://github.com/Safwanny/6DOF_arm) | 6-DOF manipulator arm built from scratch and integrated with MoveIt 2. C++ API for named, joint and pose goals plus Cartesian paths, gripper control, and a custom `PoseCommand` interface. Includes MoveIt Task Constructor pick-and-place that packs randomly placed cubes into a tray, and a Gazebo Harmonic simulation with physics, force-controlled friction grasping and a depth camera. | ROS 2 Jazzy, MoveIt 2, MoveIt Task Constructor, C++, Gazebo Harmonic, ros2_control, URDF/Xacro, RViz2 |
-| [my_drone](https://github.com/Safwanny/my_drone) | Quadcopter simulation of a custom 7-inch true-X build (404 mm, 0.931 kg all-up, 2807SL motors, 7040 tri-blade props, 6S) designed from CAD. Flies two ways on two branches: on my own cascaded flight controller and EKF in C++, and on PX4 v1.17 SITL (EKF2). Both take the same commands (keyboard teleop, go-to-goal waypoints) and publish the same state, so the two can be compared flight for flight. Sensors (IMU, barometer, magnetometer, GNSS) are modelled with x500-class noise. | ROS 2 Jazzy, Gazebo Harmonic, PX4 SITL, C++, ros2_control, URDF/Xacro, RViz2 |
-| [bumperbot](https://github.com/Safwanny/bumperbot) | Differential-drive mobile robot simulation with wheel velocity control and odometry feedback in RViz. Localization, mapping, planning and navigation are planned next. | ROS 2 Jazzy, Gazebo, ros2_control, RViz |
-| [my_robot](https://github.com/Safwanny/my_robot) | ROS 2 packages to simulate and visualize a custom mobile robot with a camera, including a ROS–Gazebo bridge and keyboard teleop. | ROS 2, Gazebo, ros_gz_bridge, URDF/Xacro, RViz2 |
+## 📊 GitHub stats
 
-## 🧠 Control, simulation and signal processing
+<div align="center">
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [RL_Driving_Sim](https://github.com/Safwanny/RL_Driving_Sim) | 2D self-driving simulation with five distance sensors, a Gym-style `reset`/`step` API, a discrete action space, baseline agents, and manual driving with CSV data logging. Built to validate sensors and control before adding a DQN agent. | Python, Pygame, NumPy, pytest |
-| [Hand-Tremor-Filtering](https://github.com/Safwanny/Hand-Tremor-Filtering) | Experiments with eight filters (Butterworth, Bessel, notch plus Butterworth, One-Euro, moving average, EMA, Savitzky–Golay, Kalman) to smooth trackpad input, with raw vs. filtered paths and frequency-spectrum views. | Python, Matplotlib |
+<img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Safwanny&show_icons=true&theme=tokyonight&hide_border=true" />
+<img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Safwanny&layout=compact&theme=tokyonight&hide_border=true" />
 
-## 👁️ Computer vision
+<img width="100%" alt="Streak" src="https://streak-stats.demolab.com/?user=Safwanny&theme=tokyonight&hide_border=true" />
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [Object-Detection](https://github.com/Safwanny/Object-Detection) | Object detection script with a camera test, using the pretrained YOLOv8m model. | Python, YOLOv8 |
-| [Object-Tracking](https://github.com/Safwanny/Object-Tracking) | Object tracking project with a configurable tracker (`tracker.yaml`) and a drawing module. | Python |
-| [Brain-Tumor-Classification](https://github.com/Safwanny/Brain-Tumor-Classification) | Classification of brain tumors from medical images, with a training script and evaluation notebooks. | Python, Jupyter |
-
-## 📈 Machine learning
-
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [Battery-RUL-Prediction](https://github.com/Safwanny/Battery-RUL-Prediction) | Predicting the remaining useful life of batteries with ML. | Python |
-| [machinelearning](https://github.com/Safwanny/machinelearning) | Collection of basic ML projects as Jupyter notebooks: MNIST digit classification (neural network), calories burnt (XGBoost), vehicle price (linear regression), Iris (SVM), kyphosis (decision trees, random forest), spam detection (NLP), Yelp review classification (NLP). | Python, Jupyter, XGBoost, SVM, NLP |
+</div>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-label="Robot software pipeline: perception, localization, planning, control, with simulation below">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="270" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <text x="40" y="45" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#c9d1d9">How a robot runs: one ROS 2 pipeline</text>
+
+  <!-- connectors -->
+  <line x1="210" y1="115" x2="250" y2="115" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="115" x2="460" y2="115" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="630" y1="115" x2="670" y2="115" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- data packets -->
+  <circle r="4" fill="#58a6ff">
+    <animateMotion dur="1.6s" repeatCount="indefinite" path="M210,115 L250,115"/>
+  </circle>
+  <circle r="4" fill="#a371f7">
+    <animateMotion dur="1.6s" begin="0.5s" repeatCount="indefinite" path="M420,115 L460,115"/>
+  </circle>
+  <circle r="4" fill="#3fb950">
+    <animateMotion dur="1.6s" begin="1s" repeatCount="indefinite" path="M630,115 L670,115"/>
+  </circle>
+
+  <!-- nodes -->
+  <g>
+    <rect x="40" y="70" width="170" height="90" rx="12" fill="#161b22" stroke="#58a6ff" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="125" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">Perception</text>
+    <text x="125" y="134" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="12" fill="#8b949e">YOLOv8 · LiDAR · camera</text>
+  </g>
+  <g>
+    <rect x="250" y="70" width="170" height="90" rx="12" fill="#161b22" stroke="#a371f7" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4s" begin="1.33s" repeatCount="indefinite"/>
+    </rect>
+    <text x="335" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">Localization</text>
+    <text x="335" y="134" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="12" fill="#8b949e">EKF · IMU · odometry</text>
+  </g>
+  <g>
+    <rect x="460" y="70" width="170" height="90" rx="12" fill="#161b22" stroke="#3fb950" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4s" begin="2.66s" repeatCount="indefinite"/>
+    </rect>
+    <text x="545" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">Planning</text>
+    <text x="545" y="134" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="12" fill="#8b949e">MoveIt 2 · Nav2</text>
+  </g>
+  <g>
+    <rect x="670" y="70" width="170" height="90" rx="12" fill="#161b22" stroke="#f0883e" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="4s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="755" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">Control</text>
+    <text x="755" y="134" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="12" fill="#8b949e">ros2_control · PX4</text>
+  </g>
+
+  <!-- sensor feedback loop -->
+  <path d="M755,160 L755,190 L125,190 L125,160" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <circle r="3" fill="#8b949e">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M755,160 L755,190 L125,190 L125,160"/>
+  </circle>
+  <text x="440" y="184" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="11" fill="#8b949e">sensor feedback → state estimate</text>
+
+  <!-- simulation bar -->
+  <rect x="40" y="226" width="800" height="30" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="440" y="246" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#8b949e">simulate first: Gazebo Harmonic · PX4 SITL · RViz2 → then real hardware</text>
+</svg>
